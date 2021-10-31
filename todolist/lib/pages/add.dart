@@ -72,7 +72,7 @@ class _AddPageState extends State<AddPage> {
   }
 
   Future postTodo() async {
-    var url = Uri.http('192.168.1.102:8000', '/api/post-todolist');
+    var url = Uri.http('128.199.83.91:8081', '/api/post-todolist');
     //var url = Uri.https('127.0.0.1:8000', '/api/post-todolist');
     Map<String, String> header = {"Content-type": "application/json"};
     String jsondata =

@@ -96,7 +96,7 @@ class _UpdatePageState extends State<UpdatePage> {
   }
 
   Future updateTodo() async {
-    var url = Uri.http('192.168.1.102:8000', '/api/update-todolist/$_v1');
+    var url = Uri.http('128.199.83.91:8081', '/api/update-todolist/$_v1');
     //var url = Uri.https('127.0.0.1:8000', '/api/post-todolist');
     Map<String, String> header = {"Content-type": "application/json"};
     String jsondata =
@@ -107,7 +107,7 @@ class _UpdatePageState extends State<UpdatePage> {
   }
 
   Future deleteTodo() async {
-    var url = Uri.http('192.168.1.102:8000', '/api/delete-todolist/$_v1');
+    var url = Uri.http('128.199.83.91:8081', '/api/delete-todolist/$_v1');
     //var url = Uri.https('127.0.0.1:8000', '/api/post-todolist');
     Map<String, String> header = {"Content-type": "application/json"};
     var response = await http.delete(url, headers: header);
